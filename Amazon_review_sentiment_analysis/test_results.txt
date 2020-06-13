@@ -1,0 +1,112 @@
+Over Sample
+Pipeline(memory=None,
+         steps=[('standardscaler',
+                 StandardScaler(copy=True, with_mean=True, with_std=True)),
+                ('randomforestclassifier',
+                 RandomForestClassifier(bootstrap=True, ccp_alpha=0.0,
+                                        class_weight=None, criterion='gini',
+                                        max_depth=None, max_features='auto',
+                                        max_leaf_nodes=None, max_samples=None,
+                                        min_impurity_decrease=0.0,
+                                        min_impurity_split=None,
+                                        min_samples_leaf=1, min_samples_split=2,
+                                        min_weight_fraction_leaf=0.0,
+                                        n_estimators=300, n_jobs=None,
+                                        oob_score=False, random_state=None,
+                                        verbose=0, warm_start=False))],
+         verbose=False)
+              precision    recall  f1-score   support
+
+          -1       1.00      1.00      1.00       253
+           0       0.97      1.00      0.98       225
+           1       1.00      0.97      0.98       241
+
+    accuracy                           0.99       719
+   macro avg       0.99      0.99      0.99       719
+weighted avg       0.99      0.99      0.99       719
+Pipeline(memory=None,
+         steps=[('standardscaler',
+                 StandardScaler(copy=True, with_mean=True, with_std=True)),
+                ('kneighborsclassifier',
+                 KNeighborsClassifier(algorithm='auto', leaf_size=30,
+                                      metric='minkowski', metric_params=None,
+                                      n_jobs=None, n_neighbors=15, p=2,
+                                      weights='uniform'))],
+         verbose=False)
+              precision    recall  f1-score   support
+
+          -1       0.98      0.94      0.96       253
+           0       0.88      0.97      0.93       225
+           1       0.99      0.93      0.96       241
+
+    accuracy                           0.95       719
+   macro avg       0.95      0.95      0.95       719
+weighted avg       0.95      0.95      0.95       719
+Pipeline(memory=None,
+         steps=[('standardscaler',
+                 StandardScaler(copy=True, with_mean=True, with_std=True)),
+                ('logisticregression',
+                 LogisticRegression(C=1.0, class_weight=None, dual=False,
+                                    fit_intercept=True, intercept_scaling=1,
+                                    l1_ratio=None, max_iter=100,
+                                    multi_class='auto', n_jobs=None,
+                                    penalty='l2', random_state=None,
+                                    solver='lbfgs', tol=0.0001, verbose=0,
+                                    warm_start=False))],
+         verbose=False)
+              precision    recall  f1-score   support
+
+          -1       0.99      1.00      0.99       253
+           0       0.93      1.00      0.96       225
+           1       1.00      0.91      0.95       241
+
+    accuracy                           0.97       719
+   macro avg       0.97      0.97      0.97       719
+weighted avg       0.97      0.97      0.97       719
+Pipeline(memory=None,
+         steps=[('standardscaler',
+                 StandardScaler(copy=True, with_mean=True, with_std=True)),
+                ('adaboostclassifier',
+                 AdaBoostClassifier(algorithm='SAMME.R', base_estimator=None,
+                                    learning_rate=1.0, n_estimators=150,
+                                    random_state=None))],
+         verbose=False)
+              precision    recall  f1-score   support
+
+          -1       0.98      0.74      0.84       253
+           0       0.66      0.68      0.67       225
+           1       0.54      0.66      0.59       241
+
+    accuracy                           0.69       719
+   macro avg       0.73      0.69      0.70       719
+weighted avg       0.73      0.69      0.70       719
+Pipeline(memory=None,
+         steps=[('standardscaler',
+                 StandardScaler(copy=True, with_mean=True, with_std=True)),
+                ('gradientboostingclassifier',
+                 GradientBoostingClassifier(ccp_alpha=0.0,
+                                            criterion='friedman_mse', init=None,
+                                            learning_rate=1, loss='deviance',
+                                            max_depth=3, max_features=None,
+                                            max_leaf_nodes=None,
+                                            min_impurity_decrease=0.0,
+                                            min_impurity_split=None,
+                                            min_samples_leaf=1,
+                                            min_samples_split=2,
+                                            min_weight_fraction_leaf=0.0,
+                                            n_estimators=60,
+                                            n_iter_no_change=None,
+                                            presort='deprecated',
+                                            random_state=None, subsample=1.0,
+                                            tol=0.0001, validation_fraction=0.1,
+                                            verbose=0, warm_start=False))],
+         verbose=False)
+              precision    recall  f1-score   support
+
+          -1       0.97      1.00      0.98       253
+           0       0.89      1.00      0.94       225
+           1       1.00      0.85      0.92       241
+
+    accuracy                           0.95       719
+   macro avg       0.95      0.95      0.95       719
+weighted avg       0.95      0.95      0.95       719
