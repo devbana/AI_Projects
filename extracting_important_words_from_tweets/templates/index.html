@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Natural Language Processing</title>
+</head>
+<body>
+<div class="login">
+	<h1>Twitter Keyword Extraction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('getdata')}}"method="post">
+    	<input type="text" name="email" placeholder="Type your Tweet Here" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   <b>{{ prediction_text }}</b>
+
+ </div>
+</body>
+</html>
