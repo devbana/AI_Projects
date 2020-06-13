@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Search Engine</title>
+     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Search Engine using Machine Learning</h1>
+
+    <form action="{{ url_for('predict')}}" method="post">
+        <textarea rows="10" cols="50" name="headnews" placeholder="Enter News Header Here " required></textarea>
+        <br>
+        <br>
+        <button type="submit" name="news_button">Search</button>
+    </form>
+
+   <br>
+   <br>
+    <p style="color:black">{{ prediction_text }}</p>
+
+
+ </div>
+
+</body>
+</html>
