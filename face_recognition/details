@@ -1,0 +1,10 @@
+This is code for face recognition, although there are many ways we can achieve this using pretrained models like VGG16, VGG19 and others.
+due to lack to computation power on my machine I decided to build my own classifier(model).
+you will get the model in this file : face_detect_own_model
+by using face_recog code you can recognize the faces.
+
+your training set should be in the format like below:
+train_dataset\(no of folders for you want the classification)
+I have not included folders of training as it was too big and I also not provided the tranined model as it is of no use for other people.
+in case of any issue you can reach out to me anytime.
+Happy to Help :-)
