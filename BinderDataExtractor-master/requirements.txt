@@ -1,0 +1,8 @@
+nltk==3.5
+spacy==2.1.2
+docx2txt ==0.8 
+pywin32
+pdfminer
+pyap
+phonenumbers
+usaddress
