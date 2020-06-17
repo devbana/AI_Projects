@@ -1,2 +1,4 @@
 This is a competition problem where we needed to build the model that can detect anomaly correctly.
 the precision and recall is 0.9980 for the test data
+due to some errors I was not able to upload the train and test data, please refer the data at below link
+https://drive.google.com/drive/folders/1R7MaS1IZQxKXMyEdRnadQsCEYgEb_45D?usp=sharing
