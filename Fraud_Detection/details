@@ -1,0 +1,2 @@
+This is a competition problem where we needed to build the model that can detect anomaly correctly.
+the precision and recall is 0.9980 for the test data
